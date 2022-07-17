@@ -1,13 +1,17 @@
 const createSpan = () => {
   const letterText = document.getElementById('carta-texto').value;
   const generetedLetter = document.getElementById('carta-gerada');
-  const phraseArray = letterText.split(' ');
   generetedLetter.innerText = '';
+  const phraseArray = letterText.split(' ');
 
   for (let index = 0; index < phraseArray.length; index += 1) {
-    const span = document.createElement('span');
-    span.innerText = phraseArray[index];
-    generetedLetter.appendChild(span);
+    if (letterText === '' || !letterText.trim()) {
+      generetedLetter.innerText = 'Por favor, digite o conteúdo da carta.';
+    } else {
+      const span = document.createElement('span');
+      span.innerText = phraseArray[index];
+      generetedLetter.appendChild(span);
+    }
   }
 };
 
