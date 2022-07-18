@@ -12,9 +12,9 @@
   text-transform: uppercase;
 }
 
-.magazine2{
-    background-image: url(images/pink-pattern.png);
-    color: rgb(255, 0, 255);
-    font-family: Verdana;
-    font-weight: 900;
+.magazine2 {
+  background-image: url(images/pink-pattern.png);
+  color: rgb(255, 0, 255);
+  font-family: Verdana;
+  font-weight: 900;
 }
