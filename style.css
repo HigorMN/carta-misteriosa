@@ -5,6 +5,9 @@
 
 body {
   text-align: center;
+  background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p1/3203057-conceito-carta-em-madeira-fundo-dia-dos-namorados-em-branco-gr%C3%A1tis-foto.jpg);
+  background-position: 50% 20%;
+  background-size: cover;
 }
 
 header h1 {
