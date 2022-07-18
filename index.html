@@ -5,13 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carta Misteriosa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input type="text" id="carta-texto" />
-    <button id="criar-carta">Criar</button>
-    <p id="carta-gerada"></p>
-    <p id="carta-contador"></p>
+    <header><h1>Carta Misteriosa</h1></header>
+    <main class="mb-3">
+      <div class="row g-3">
+        <div class="col-auto">
+          <input
+            type="text"
+            id="carta-texto"
+            placeholder="Digite seu texto"
+            class="form-control"
+          />
+        </div>
+        <div class="col-auto">
+          <button id="criar-carta" class="btn btn-primary mb-3">Criar</button>
+        </div>
+      </div>
+      <div class="div5">
+        <p id="carta-gerada"></p>
+      </div>
+      <div class="div-cont">
+        <p>Contador de palavras:</p>
+        <p id="carta-contador"></p>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

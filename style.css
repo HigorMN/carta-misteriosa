@@ -3,6 +3,30 @@
   padding: 0;
 }
 
+body {
+  text-align: center;
+}
+
+header h1 {
+  margin: 15px;
+  margin-bottom: 50px;
+}
+main {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.div-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.div-cont p {
+  margin-left: 2px;
+}
+
 .newspaper {
   background-color: rgb(250, 235, 215);
   font-family: 'Times New Roman';
@@ -57,4 +81,19 @@
 
 #carta-gerada {
   margin: 30px;
+}
+
+.g-3 {
+  justify-content: center;
+}
+
+.div5 p {
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+span {
+    margin: 1px;
 }
