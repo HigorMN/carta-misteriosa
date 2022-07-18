@@ -15,5 +15,24 @@ const createSpan = () => {
   }
 };
 
+const spanRandom = () => {
+  const grupoEstilo = ['newspaper', 'magazine1', 'magazine2'];
+  const grupoTamanho = ['medium', 'big', 'reallybig'];
+  const grupoRotacao = ['rotateleft', 'rotateright'];
+  const grupoInclinacao = ['skewleft', 'skewright'];
+  const span = document.getElementsByTagName('span');
+
+  for (let index = 0; index < span.length; index += 1) {
+    span[index].className = `${
+      grupoEstilo[Math.floor(Math.random() * grupoEstilo.length)]
+    } ${grupoTamanho[Math.floor(Math.random() * grupoTamanho.length)]} ${
+      grupoRotacao[Math.floor(Math.random() * grupoRotacao.length)]
+    } ${grupoInclinacao[Math.floor(Math.random() * grupoInclinacao.length)]}`;
+  }
+};
+
 const buttonCreate = document.getElementById('criar-carta');
-buttonCreate.addEventListener('click', createSpan);
+buttonCreate.addEventListener('click', () => {
+  createSpan();
+  spanRandom();
+});
