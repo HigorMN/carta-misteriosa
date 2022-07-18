@@ -55,3 +55,14 @@ buttonCreate.addEventListener('click', () => {
   spanRandom();
   changeClass();
 });
+
+const counterSpan = () => {
+  const p = document.getElementById('carta-contador');
+  const letterText = document.getElementById('carta-texto');
+  letterText.addEventListener('keyup', () => {
+    const phraseArray = letterText.value.split(' ');
+    p.innerText = phraseArray.length;
+  });
+};
+
+counterSpan();

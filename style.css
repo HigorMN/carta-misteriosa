@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .newspaper {
@@ -53,4 +53,8 @@
 
 .skewright {
   transform: matrix(1, 0, -0.176327, 1, 0, 0);
+}
+
+#carta-gerada {
+  margin: 30px;
 }
